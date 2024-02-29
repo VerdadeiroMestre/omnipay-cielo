@@ -1,0 +1,50 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "MerchantOrderId": "123456",
+    "Customer": {
+        "Name": "Comprador Teste",
+        "Identity": "1234567890",
+        "Address": {
+            "Street": "Rua Teste",
+            "Number": "123",
+            "Complement": "AP 123",
+            "ZipCode": "12345987",
+            "City": "Rio de Janeiro",
+            "State": "RJ",
+            "Country": "BRA",
+            "District": "Centro",
+            "AddressType": 0
+        }
+    },
+    "Payment": {
+        "Instructions": "Aceitar somente até a data de vencimento, após essa data juros de 1% dia.",
+        "ExpirationDate": "2020-12-31",
+        "Demonstrative": "Desmonstrative Teste",
+        "Url": "https://transactionsandbox.pagador.com.br/post/pagador/reenvia.asp/274d5101-91b0-4fa5-a11f-3b93bb464fe1",
+        "BoletoNumber": "123-2",
+        "BarCodeNumber": "00099848600015700009999250000000012399999990",
+        "DigitableLine": "00099.99921 50000.000013 23999.999909 9 84860001570000",
+        "Assignor": "Empresa Teste",
+        "Address": "Rua Teste",
+        "Identification": "11884926754",
+        "Bank": 0,
+        "Amount": 1570000,
+        "ReceivedDate": "2024-02-29 15:53:57",
+        "Provider": "Simulado",
+        "Status": 1,
+        "IsSplitted": false,
+        "PaymentId": "274d5101-91b0-4fa5-a11f-3b93bb464fe1",
+        "Type": "Boleto",
+        "Currency": "BRL",
+        "Country": "BRA",
+        "Links": [
+            {
+                "Method": "GET",
+                "Rel": "self",
+                "Href": "https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/274d5101-91b0-4fa5-a11f-3b93bb464fe1"
+            }
+        ]
+    }
+}

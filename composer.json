@@ -1,0 +1,27 @@
+{
+    "name": "verdadeiro-mestre/omnipay-cielo",
+    "description": "Gateway de pagamentos Cielo",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius Ferreira",
+            "email": "vinyciussouza02@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": { "Omnipay\\Cielo\\" : "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnipay\\CieloTest\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^4.1.2"
+    }
+}

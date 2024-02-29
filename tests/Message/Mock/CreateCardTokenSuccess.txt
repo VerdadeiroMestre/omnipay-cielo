@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "CardToken": "ce1b9639-1143-4855-a668-b4d72785516e",
+    "Links": {
+        "Method": "GET",
+        "Rel": "self",
+        "Href": "https://apiquerysandbox.cieloecommerce.cielo.com.br/1/card/ce1b9639-1143-4855-a668-b4d72785516e"
+    }
+}

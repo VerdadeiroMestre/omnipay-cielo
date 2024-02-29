@@ -1,0 +1,53 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "MerchantOrderId": "123456",
+    "Customer": {
+        "Name": "[Guest]"
+    },
+    "Payment": {
+        "ServiceTaxAmount": 0,
+        "Installments": 1,
+        "Interest": 0,
+        "Capture": true,
+        "Authenticate": false,
+        "Recurrent": false,
+        "CreditCard": {
+            "CardNumber": "401288******1881",
+            "ExpirationDate": "12/2030",
+            "SaveCard": false,
+            "Brand": "Visa",
+            "PaymentAccountReference": "WKG23AH3ZK9GNUB5LI97HYN2S8XAN"
+        },
+        "Tid": "0229034209427",
+        "ProofOfSale": "119172",
+        "AuthorizationCode": "388827",
+        "Provider": "Simulado",
+        "IsQrCode": false,
+        "Amount": 1000,
+        "ReceivedDate": "2024-02-29 15:42:09",
+        "CapturedAmount": 1000,
+        "CapturedDate": "2024-02-29 15:42:09",
+        "Status": 2,
+        "IsSplitted": false,
+        "ReturnMessage": "Operation Successful",
+        "ReturnCode": "6",
+        "PaymentId": "1bcf70f7-6695-4edd-a453-6d5008f39957",
+        "Type": "CreditCard",
+        "Currency": "BRL",
+        "Country": "BRA",
+        "Links": [
+            {
+                "Method": "GET",
+                "Rel": "self",
+                "Href": "https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/1bcf70f7-6695-4edd-a453-6d5008f39957"
+            },
+            {
+                "Method": "PUT",
+                "Rel": "void",
+                "Href": "https://apisandbox.cieloecommerce.cielo.com.br/1/sales/1bcf70f7-6695-4edd-a453-6d5008f39957/void"
+            }
+        ]
+    }
+}
